@@ -45,7 +45,7 @@ const swaggerDefinition = {
 
 const options = {
     swaggerDefinition,
-    apis: ['product-catalog-api/routes/*.js'],
+    apis: ['./routes/*.js'],
 };
 const swaggerSpec = swaggerJSDoc(options);
 app.use('/docs', swaggerUi.serve, swaggerUi.setup(swaggerSpec));

@@ -4,14 +4,6 @@ import products from './products';
 
 const routes  = express.Router();
 
-/**
- * @swagger
- * paths:
- *  /products:
- *    get:
- *      summary: Retrieve a list of all stored products
- *      description: Retrieve a list of saved products in database.
- */
 routes.use('/products', products);
 
 // Healthcheck

@@ -10,6 +10,22 @@ The project exposes API methods to support the following operations:
 - Delete products
 - Find product by ID
 
+Example request:
+- Create new product:
+
+POST `localhost:9000/products`
+Body: 
+```
+{
+    "name": "testxxxx444xx",
+    "quantity": 3,
+    "price": 5
+}
+```
+
+Response:
+- Status: 201
+
 You can get more detail in the [Swagger documentation](http://localhost:9000/docs/).
 
 ## Getting started
