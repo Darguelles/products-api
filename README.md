@@ -66,6 +66,6 @@ npm test
 - Implement API client methods such get products, delete products.
 - Implement unit tests covering expected outputs and errors returned.
 - Define BDD to write the unit tests based on use cases.
-- 
+- Implement DLQ for non-consumed messages with more than 1 day in the queue.
 
 
