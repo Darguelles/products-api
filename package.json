@@ -1,0 +1,38 @@
+{
+  "name": "product-api",
+  "version": "1.0.0",
+  "description": "Product catalog application",
+  "main": "index.js",
+  "scripts": {
+    "start": "export NODE_ENV=dev NODE_CONFIG_DIR=./src/config/ && nodemon -w src --exec \"babel-node src/app.js --presets es2015,stage-0\"",
+    "test": "export NODE_ENV=test NODE_CONFIG_DIR=./src/config/ && mocha --timeout 10000 --compilers js:babel-core/register ./src/test/*.js "
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Darguelles/products-api"
+  },
+  "author": "Diego Rojas",
+  "dependencies": {
+    "aws-sdk": "^2.927.0",
+    "bcrypt": "^1.0.3",
+    "body-parser": "^1.17.2",
+    "config": "^1.26.2",
+    "express": "^4.17.1",
+    "morgan": "^1.8.2",
+    "node-cron": "^3.0.0",
+    "swagger-jsdoc": "5.0.1",
+    "swagger-ui-express": "^4.1.6",
+    "uuid": "^8.3.2"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.0",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-stage-0": "^6.24.1",
+    "chai": "^4.1.2",
+    "chai-http": "^3.0.0",
+    "jest": "^27.0.4",
+    "mocha": "^3.5.3",
+    "nodemon": "^1.11.0"
+  }
+}
